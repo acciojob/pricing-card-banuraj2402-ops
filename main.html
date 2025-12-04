@@ -4,9 +4,84 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
-</head>
+<style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif; 
+            background-color: #f0f0f0; 
+        }
 
+        .card {
+            width: 300px; 
+            padding: 20px; 
+            background-color: #ffffff; 
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+        }
+
+        .card img {
+            width: 100%; 
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .card h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .card .price {
+            font-size: 22px;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+
+        .card .description {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 25px;
+            color: #333;
+        }
+
+        .buy-button {
+            padding: 10px 20px; 
+            background-color: #f77a6f; 
+            color: white; 
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px; 
+            transition: background-color 0.3s ease;
+        }
+
+        .buy-button:hover {
+            background-color: #e06c62;
+        }
+    </style>
+</head>
 <body>
+    <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVQfWAcKJh0l4u2aQYbAyPklMOob3ADxZPOw&s" alt="A tree with a heart-shaped canopy in a red field">
+
+        <h1>Pricing Card</h1>
+
+        <p class="price">Price: Rs.200</p>
+
+        <p class="description">
+            Description: The goal is to set the appropriate price expectation while highlighting its unique value and appeal. 
+        </p>
+
+        <button class="buy-button">Buy Now</button>
+    </div>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
